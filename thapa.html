@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statment</title>
+    <style>
+        input {
+            border: 2px solid black;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(rgb(124, 124, 218), rgb(57, 232, 255), rgb(199, 15, 255)) no-repeat center center/cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Enter your choice</h2>
+        <br>
+        <ul>
+            <li>add</li>
+            <li>sub</li>
+            <li>mult</li>
+        </ul>
+        <br>
+        <form action="">
+            <input type="text" id="choices">
+            <br> <br>
+            <button onclick="owes()">Click me</button>
+        </form>
+    </div>
+    <script type="text/javascript">
+
+        function owes() {
+            var yourchoice = document.getElementById("choices").value;
+            // alert(yourchoice);
+            switch (yourchoice) {
+                case "add": var a = 10;
+                    var b = 10; 
+                    var c = a + b;
+                    document.write("addition of two number is &nbsp;&nbsp;&nbsp;", c);
+                    break;
+
+                case "sub": var a = 10;
+                    var b = 10;
+                    var c = a - b;
+                    document.write("substraction of two number is &nbsp;&nbsp;&nbsp;", c);
+                    break;
+
+                case "mult": var a = 10;
+                    var b = 10;
+                    var c = a * b;
+                    document.write("multiplication of two numbers is &nbsp;&nbsp;&nbsp;" + c);
+                    break;
+
+                default: alert("Not a valid input");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

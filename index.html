@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    li {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    .parent {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        height: 100vh;
+        padding: 15px 15px 15px 30px;
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .box :nth-child(1){
+        margin-bottom: 60px;
+    }
+    #show{
+        color: rgb(94, 194, 94);
+        margin-top: 20px;
+        font-size: 35px;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+
+
+        <div class="box">
+            <p>type the give numbers an get his spelling</p>
+            <input type="text" id="typeANumber">
+            <button id="btn">Click</button>
+            <p id="show"></p>
+        </div>
+
+    </div>
+
+    <script>
+
+        const btn = document.getElementById("btn");
+        const show = document.getElementById("show");
+
+        btn.addEventListener("click", () => {
+            const typeANumber = document.getElementById("typeANumber").value;
+
+            switch (typeANumber) {
+                case "1":
+                    show.innerHTML = "One";
+                    break;
+
+                case "2":
+                    show.innerHTML = "Two";
+                    break;
+
+                case "3":
+                    show.innerHTML = "Three";
+                    break;
+
+                case "4":
+                    show.innerHTML = "Four";
+                    break;
+
+                case "5":
+                    show.innerHTML = "Five";
+                    break;
+
+                case "6":
+                    show.innerHTML = "Six";
+                    break;
+
+                case "7":
+                    show.innerHTML = "Seven";
+                    break;
+
+                case "8":
+                    show.innerHTML = "Eeight";
+                    break;
+
+                case "9":
+                    show.innerHTML = "Nine";
+                    break;
+
+                case "10":
+                    show.innerHTML = "Ten";
+                    break;
+
+
+                default: alert("incorrect value");
+            }
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>
